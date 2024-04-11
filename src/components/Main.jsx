@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './blocks/Button/Button'
 
-export default function Main() {
+export const Main = () => {
     return (
         <div className='main'>
             <div className="container">
