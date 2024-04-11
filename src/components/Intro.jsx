@@ -6,9 +6,9 @@ import Main from './Main'
 export default function Intro() {
   return (
     <div className='intro'>
-        <Preheader />
-        <Header />
-        <Main />
+      <Preheader />
+      <Header />
+      <Main />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './blocks/Logo'
 import Raiting from './blocks/Raiting'
-import Calc from './blocks/Calc'
+import Calc from './blocks/Calc/Calc'
 import Socials from './blocks/Socials'
 
 export default function Preheader() {
