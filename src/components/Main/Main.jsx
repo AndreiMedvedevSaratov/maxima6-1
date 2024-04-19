@@ -3,6 +3,9 @@ import './Main.scss'
 import Button from '../blocks/Button/Button'
 
 export default function Main() {
+    const isShowButton = true;
+    // const isHiddenButton = false;
+
     return (
         <div className='main'>
             <div className="container">
@@ -14,7 +17,7 @@ export default function Main() {
                         Построим теплый и надежный дом
                         <span> с гарантией 10 лет</span>
                     </p>
-                    <Button class_btn={'main__btn'}>рассчитать стоимость</Button>
+                    {isShowButton && <Button class_btn={'main__btn'}>рассчитать стоимость</Button>}
                 </div>
             </div>
         </div>
