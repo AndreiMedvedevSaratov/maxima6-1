@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Promise.scss';
 import { PromiseItem } from './PromiseItem/PromiseItem';
 
@@ -19,6 +19,8 @@ const cartInfo3 = [
 ];
 
 export default function Promise() {
+    const [myState, setMyState] = useState(42);
+
     return (
         <div className='promise'>
             <div className="container">
@@ -29,7 +31,11 @@ export default function Promise() {
                 <div className="promise__row">
                     <PromiseItem cartInfo={cartInfo1} />
                     <PromiseItem cartInfo={cartInfo2} />
-                    <PromiseItem cartInfo={cartInfo3} />
+                    <PromiseItem
+                        cartInfo={cartInfo3}
+                        state={myState}
+                        setState={setMyState}
+                    />
                 </div>
 
             </div>
