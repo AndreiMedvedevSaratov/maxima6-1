@@ -1,0 +1,68 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "name": "John 1",
+      "email": "john1@mail.com",
+      "date": "2020-01-01 18:00:00",
+      "text": "Updated comment"
+    },
+    {
+      "id": "3",
+      "name": "John 3",
+      "email": "john2@mail.com",
+      "date": "2024-03-03 18:30:00",
+      "text": "Updated comment"
+    },
+    {
+      "id": "51c6e5f8",
+      "text": "Updated comment",
+      "name": "Vasya",
+      "date": "2024-05-06T17:34:05.236Z"
+    },
+    {
+      "id": "a7c9f77b-6f7b-43f5-8b08-4d66285928c6",
+      "text": "Updated comment",
+      "name": "Anonymous",
+      "date": "2024-05-06T17:37:08.840Z"
+    },
+    {
+      "id": "efd7d021-ff8b-47a4-8a7a-2eddbcb9052c",
+      "text": "Updated comment",
+      "name": "343453453",
+      "date": "2024-05-06T17:54:03.636Z"
+    },
+    {
+      "id": "c63f93b0-b062-4cdd-8c0e-0fdeb54dbf3a",
+      "text": "Updated comment",
+      "name": "fsadfsdf",
+      "date": "2024-05-06T17:55:23.176Z"
+    },
+    {
+      "id": "95bc7d5a-c7d8-43f0-8d20-ebee42100a9d",
+      "text": "33333",
+      "name": "33333",
+      "date": "2024-05-06T18:02:13.537Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Mike",
+      "email": "mike@mail.com",
+      "type": "admin"
+    },
+    {
+      "id": "2",
+      "name": "John",
+      "email": "john2@mail.com",
+      "type": "user"
+    },
+    {
+      "id": "3",
+      "name": "Vasya",
+      "email": "vasya@mail.com",
+      "type": "user"
+    }
+  ]
+}
