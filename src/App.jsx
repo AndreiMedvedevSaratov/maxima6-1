@@ -15,12 +15,12 @@ import Questions from './components/Questions/Questions';
 import Contacts from './components/Contacts/Contacts';
 import { Footer } from './components/Footer/Footer';
 import { TestComments } from './components/TestComments/TestComments';
-// import { Counter } from './components/Counter/Counter';
+import { Counter } from './components/Counter/Counter';
 
 function App() {
   return (
     <div >
-      {/* <Counter /> */}
+      <Counter />
       <TestComments />
       <Intro />
       <Promise />
