@@ -10,6 +10,7 @@ import {
   SET_STATUS_FOR_FILTER,
 } from "./actions";
 import { sortTypes } from "../components/Popular/Popular";
+import usersReducer from "./users/usersReducer";
 
 // Counter Reducer
 const counterInitialState = { value: 0 };
@@ -88,6 +89,7 @@ const rootReducer = combineReducers({
   consultations: consultationReducer,
   filter: filterReducer,
   stage: stageReducer,
+  users: usersReducer,
 });
 
 export default rootReducer;
