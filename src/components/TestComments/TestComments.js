@@ -11,7 +11,7 @@ import {
 import { v4 as uuidv4 } from "uuid";
 // import { getEl, uuid } from "../../api/helpers.js";
 
-export const TestComments = () => {
+export default function TestComments() {
   // Получить все комментарии
   const [comments, setComments] = useState([]);
 
@@ -95,4 +95,4 @@ export const TestComments = () => {
       </form>
     </div>
   );
-};
+}

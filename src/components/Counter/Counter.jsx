@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, incrementByAmount, decrementByAmount } from "../../classic-redux/actionsCreators";
 
-export function Counter() {
+export default function Counter() {
     const [incrementValue, setIncrementValue] = useState(0);
     const [decrementValue, setDecrementValue] = useState(0);
     const count = useSelector((state) => state.counter.value);

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchUserData } from "../../classic-redux/users/thunkActions";
 
-export const Users = () => {
+export default function Users() {
   const dispatch = useDispatch();
   const { user, loading, error } = useSelector((state) => state.users);
 
@@ -27,4 +27,4 @@ export const Users = () => {
       )}
     </div>
   );
-};
+}
