@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, incrementByAmount, decrementByAmount } from "../../classic-redux/actionsCreators";
+import { decrement, decrementByAmount, increment, incrementByAmount } from "../../redux/slices/counterSlice";
 
-export default function Counter() {
+export function Counter() {
     const [incrementValue, setIncrementValue] = useState(0);
     const [decrementValue, setDecrementValue] = useState(0);
     const count = useSelector((state) => state.counter.value);
@@ -25,11 +25,7 @@ export default function Counter() {
                     Decrement
                 </button>
 
-                <input
-                    type="number"
-                    value={incrementValue}
-                    onChange={(e) => setIncrementValue(+e.target.value)}
-                />
+                <input type="number" value={incrementValue} onChange={(e) => setIncrementValue(+e.target.value)} />
 
                 <button
                     aria-label="Increment by amount"
@@ -38,14 +34,10 @@ export default function Counter() {
                     Increment by amount
                 </button>
 
-                <input
-                    type="number"
-                    value={decrementValue}
-                    onChange={(e) => setDecrementValue(+e.target.value)}
-                />
+                <input type="number" value={decrementValue} onChange={(e) => setDecrementValue(+e.target.value)} />
 
                 <button
-                    aria-label="Decrement by amount"
+                    aria-label="Increment by amount"
                     onClick={() => dispatch(decrementByAmount(decrementValue))}
                 >
                     Decrement by amount

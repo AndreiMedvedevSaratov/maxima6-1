@@ -1,4 +1,4 @@
-import { SERVER_URL, POST, DELETE, PUT, PATCH } from "./constants.js";
+import { SERVER_URL, POST, DELETE, PUT } from "./constants.js";
 
 export const api = async (method, payload, endpoint = SERVER_URL) => {
   let config = {};
@@ -11,15 +11,11 @@ export const api = async (method, payload, endpoint = SERVER_URL) => {
       },
     };
 
-    console.log(payload);
-    if (method === POST || method === PUT || method === PATCH) {
-      config.body = JSON.stringify(payload);
-
-      console.log(config);
-      console.log(config.body);
+    if (method === POST || method === PUT) {
+      config.body = JSON.stringify(payload.body);
     }
 
-    if (method === DELETE || method === PUT || method === PATCH) {
+    if (method === DELETE || method === PUT) {
       endpoint = `${endpoint}/${payload.id}`;
     }
   }
@@ -42,10 +38,6 @@ export const api = async (method, payload, endpoint = SERVER_URL) => {
           message = "Data has been updated";
           break;
         }
-        case PATCH: {
-          message = "Data has been updated";
-          break;
-        }
         default: {
           message = "Data has been received";
         }
@@ -55,7 +47,6 @@ export const api = async (method, payload, endpoint = SERVER_URL) => {
       const result = await response.json();
       return result;
     }
-
     throw new Error(response.statusText);
   } catch (err) {
     console.error(err.message || err);
