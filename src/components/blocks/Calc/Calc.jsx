@@ -1,13 +1,16 @@
 import React from 'react'
 import './Calc.scss'
+import { useNavigate } from 'react-router-dom'
 
-export default function Calc() {
+export default function Calc({text, status}) {
+  const navigate = useNavigate();
+
   return (
     <div className='calc'>
-        <button className="calc__btn">
-            Прислать проект на расчет
+        <button className="calc__btn" onClick={() => navigate('/ideal-home')}>
+            {text}
         </button>
-        <a href="mailto:info@house.world" className="calc__link">info@house.world</a>
+        {status && <a href="mailto:info@house.world" className="calc__link">info@house.world</a>}
     </div>
   )
 }
